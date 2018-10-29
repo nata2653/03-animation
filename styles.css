@@ -7,11 +7,11 @@ body {
 }
 
 #game_background {
+    position: relative;
     background-image: url("produktion/baggrund_spil.svg");
     background-size: cover;
     width: 100vw;
-    height: 56vw;
-    position: relative;
+    height: 56.25vw;
 }
 
 #paraply {
@@ -27,6 +27,25 @@ body {
     z-index: 1;
 }
 
+.paraply_ned {
+    animation-name: paraply_ned_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    transform-origin: 15% 1%;
+}
+
+@keyframes paraply_ned_kf {
+    0% {
+        transform: translateY(-50vw);
+    }
+
+    100% {
+        transform: translateY(50vw);
+    }
+}
+
 #sur_sky {
     background-image: url("produktion/sur_sky_element.svg");
     background-repeat: no-repeat;
@@ -39,6 +58,26 @@ body {
     left: 20vw;
     z-index: 1;
 }
+
+.sky_ned {
+    animation-name: sky_ned_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    transform-origin: 15% 1%;
+}
+
+@keyframes sky_ned_kf {
+    0% {
+        transform: translateY(-50vw);
+    }
+
+    100% {
+        transform: translateY(50vw);
+    }
+}
+
 
 #sol {
     background-image: url("produktion/sol_element.svg");
@@ -53,6 +92,26 @@ body {
     z-index: 1;
 }
 
+.sol_ned {
+    animation-name: sol_ned_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    transform-origin: 15% 1%;
+}
+
+@keyframes sol_ned_kf {
+    0% {
+        transform: translateY(-100vw);
+    }
+
+    100% {
+        transform: translateY(50vw);
+    }
+}
+
+
 #solbriller {
     background-image: url("produktion/solbriller_element.svg");
     background-repeat: no-repeat;
@@ -64,6 +123,25 @@ body {
     top: 5vw;
     left: 80vw;
     z-index: 1;
+}
+
+.solbriller_ned {
+    animation-name: solbriller_ned_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    transform-origin: 15% 1%;
+}
+
+@keyframes solbriller_ned_kf {
+    0% {
+        transform: translateY(-100vw);
+    }
+
+    100% {
+        transform: translateY(50vw);
+    }
 }
 
 #is {
@@ -78,6 +156,24 @@ body {
     left: 55vw;
     z-index: 1;
 }
+
+.is_ned {
+    animation-name: is_ned_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    transform-origin: 15% 1%;
+}
+
+@keyframes is_ned_kf {
+    0% {
+        transform: translateY(-100vw);
+    }
+
+    100% {
+        transform: translateY(50vw);
+    }
 }
 
 #sky_background1 {
@@ -88,8 +184,8 @@ body {
     width: 10vw;
     height: 16vw;
     position: absolute;
-    top: 2vw;
-    left: 40vw;
+    top: 4vw;
+    left: 10vw;
 }
 
 #sky_background2 {
@@ -116,6 +212,25 @@ body {
     left: 4vw;
 }
 
+.sky_siden {
+    animation-name: sky_siden_kf;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    transform-origin: 15% 1%;
+}
+
+@keyframes sky_siden_kf {
+    0% {
+        transform: translateX(-20vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
 /*game ui*/
 
 #points {
@@ -133,6 +248,7 @@ body {
 
 #liv {
     background-image: url("produktion/liv.svg");
+    position: static;
     background-repeat: no-repeat;
 
     background-size: 100%;
@@ -145,6 +261,7 @@ body {
 
 #time {
     background-image: url("produktion/time.svg");
+    position: static;
 
     background-repeat: no-repeat;
 
@@ -158,8 +275,8 @@ body {
 
 #pause {
     background-image: url("produktion/pause.svg");
+    position: static;
     background-repeat: no-repeat;
-
     background-size: 100%;
     width: 3vw;
     height: 16vw;
