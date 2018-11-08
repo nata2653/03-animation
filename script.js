@@ -1,6 +1,6 @@
 let count = 0;
 let mist = 3;
-let timeLeft = 200;
+let timeLeft = 30;
 let time = 30;
 let showSettingsEffektSound = true;
 let timeLeftTimeOut;
@@ -19,8 +19,6 @@ function sidenVises() {
 
     document.querySelector("#time").innerHTML = "00: " +
         time;
-
-
 }
 
 function showStart() {
@@ -119,7 +117,6 @@ function startGame() {
     setTimeout(isFrem, 1000);
     setTimeout(skyFrem, 1000);
     setTimeout(paraplyFrem, 1000);
-
 }
 
 function solFrem() {
@@ -146,7 +143,7 @@ function solbrillerFrem() {
         document.querySelector("#solbriller").classList.add("position" + Math.floor((Math.random() * 5) + 1));
     }
     setTimeout(solbrillerFrem, 1000);
-    document.querySelector("#sol").addEventListener("click", solClick);
+    document.querySelector("#solbriller").addEventListener("click", solbrillerClick);
 
 }
 
@@ -160,7 +157,7 @@ function isFrem() {
         document.querySelector("#is").classList.add("position" + Math.floor((Math.random() * 5) + 1));
     }
     setTimeout(isFrem, 1000);
-    document.querySelector("#is").addEventListener("click", solClick);
+    document.querySelector("#is").addEventListener("click", isClick);
 
 }
 
@@ -174,7 +171,7 @@ function skyFrem() {
         document.querySelector("#sur_sky").classList.add("position" + Math.floor((Math.random() * 5) + 1));
     }
     setTimeout(skyFrem, 1000);
-    document.querySelector("#sur_sky").addEventListener("click", solClick);
+    document.querySelector("#sur_sky").addEventListener("click", surSkyClick);
 
 }
 
@@ -188,7 +185,7 @@ function paraplyFrem() {
         document.querySelector("#paraply").classList.add("position" + Math.floor((Math.random() * 5) + 1));
     }
     setTimeout(paraplyFrem, 1000);
-    document.querySelector("#paraply").addEventListener("click", solClick);
+    document.querySelector("#paraply").addEventListener("click", paraplyClick);
 
 }
 
@@ -337,8 +334,6 @@ function tabtLiv() {
     if (mist == 0) {
         gameover();
 
-        document.querySelector("#reset").addEventListener("click", tabtLivReset);
-
     } else {
         levelComplete();
     }
@@ -347,7 +342,7 @@ function tabtLiv() {
 
 function gameStatus() {
     console.log("gamestatus")
-    if (count == 10) {
+    if (count == 5) {
 
         levelComplete();
     }
@@ -360,11 +355,7 @@ function tabtPoint() {
         gameover();
 
     }
-    document.querySelector("#reset").addEventListener("click", tabtLivReset);
-}
 
-function tabtLivReset() {
-    mist = 3;
 }
 
 function gameover() {
@@ -403,8 +394,6 @@ function reset() {
     document.querySelector("#gameover").classList.add("hide");
     document.querySelector("#levelcomplete").classList.add("hide");
 
-    mist = 0;
-    count = 3;
     //showStart();
     window.history.go(0);
 }
@@ -413,8 +402,6 @@ function reset1() {
     document.querySelector("#gameover").classList.add("hide");
     document.querySelector("#levelcomplete").classList.add("hide");
 
-    count = 0;
-    mist = 3;
     //showStart();
     window.history.go(0);
 }

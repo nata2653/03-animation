@@ -1,5 +1,4 @@
 * {
-
     box-sizing: border-box;
 }
 
@@ -104,7 +103,7 @@ body {
     }
 
     100% {
-        transform: translateY(50vw);
+        transform: translateY(70vw);
     }
 }
 
@@ -134,7 +133,7 @@ body {
     }
 
     100% {
-        transform: translateY(50vw);
+        transform: translateY(70vw);
     }
 }
 
@@ -152,7 +151,7 @@ body {
 
 .sol_ned {
     animation-name: sol_ned_kf;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: both;
@@ -165,7 +164,7 @@ body {
     }
 
     100% {
-        transform: translateY(60vw);
+        transform: translateY(70vw);
     }
 }
 
@@ -197,7 +196,7 @@ body {
     }
 
     100% {
-        transform: translateY(50vw);
+        transform: translateY(70vw);
     }
 }
 
@@ -227,7 +226,7 @@ body {
     }
 
     100% {
-        transform: translateY(50vw);
+        transform: translateY(70vw);
     }
 }
 
@@ -287,30 +286,30 @@ body {
 }
 
 .position1 {
-    top: -10vw;
-    left: 20vw;
+    top: -15vw;
+    left: 12vw;
 }
 
 .position2 {
     top: -10vw;
-    left: 50vw;
+    left: 55vw;
 
 }
 
 .position3 {
     top: -10vw;
-    left: 30vw;
+    left: 35vw;
 }
 
 .position4 {
     top: -10vw;
-    left: 40vw;
+    left: 45vw;
 
 }
 
 .position5 {
     top: -10vw;
-    left: 60vw;
+    left: 78vw;
 
 }
 
@@ -335,6 +334,8 @@ body {
     left: 4vw;
     z-index: 2;
     font-size: 1rem;
+    font-family: 'Amatic SC', cursive;
+
 }
 
 #liv {
@@ -358,6 +359,8 @@ body {
     left: 4.5vw;
     z-index: 2;
     font-size: 1rem;
+    font-family: 'Amatic SC', cursive;
+
 }
 
 #time {
@@ -579,4 +582,82 @@ effekter .hide {
     100% {
         transform: scale(1);
     }
+}
+
+@media only screen and (min-width: 568px) {
+    #count {
+        font-size: 1rem;
+        top: 3.2vw;
+
+    }
+
+    #mist {
+        font-size: 2rem;
+        top: 2vw;
+        left: 4.2vw;
+    }
+
+    #gameover {
+        top: 15vw;
+        left: 25vw;
+    }
+
+    #levelcomplete {
+        top: 15vw;
+        left: 25vw;
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    #count {
+        font-size: 1.3rem;
+        top: 3.2vw;
+
+    }
+
+    #mist {
+        font-size: 2rem;
+        top: 3vw;
+        left: 4.2vw;
+    }
+
+    #gameover {
+        top: 15vw;
+        left: 23vw;
+    }
+
+    #levelcomplete {
+        top: 15vw;
+        left: 23vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #count {
+        font-size: 2rem;
+        top: 3.2vw;
+
+    }
+
+    #mist {
+        font-size: 4rem;
+        top: 2.5vw;
+        left: 4.2vw;
+    }
+
+    #time {
+        font-size: 4rem;
+        left: 43vw;
+    }
+
+    #gameover {
+        top: 20vw;
+        left: 25vw;
+    }
+
+    #levelcomplete {
+        top: 20vw;
+        left: 25vw;
+    }
+
 }
