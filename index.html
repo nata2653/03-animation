@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spil</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 </head>
 
 <body>
@@ -18,11 +19,11 @@
             <div id="game_background"></div>
 
             <div id="game_elements">
-                <div id="paraply" class="paraply_ned position1"></div>
-                <div id="sur_sky" class="sky_ned position2"></div>
-                <div id="sol" class="sol_ned position3"></div>
-                <div id="solbriller" class="solbriller_ned position4"></div>
-                <div id="is" class="is_ned position5"></div>
+                <div id="paraply" class="position1"></div>
+                <div id="sur_sky" class="position2"></div>
+                <div id="sol" class="position3"></div>
+                <div id="solbriller" class="position4"></div>
+                <div id="is" class="position5"></div>
                 <div id="sky_background1" class="sky_siden"></div>
                 <div id="sky_background2" class="sky_siden"></div>
                 <div id="sky_background3" class="sky_siden"></div>
@@ -37,7 +38,9 @@
                     <div id="mist"></div>
 
                 </div>
-                <div id="time"></div>
+                <div id="time">
+                    <div class="timeTell"></div>
+                </div>
                 <div id="pause"></div>
             </div>
 
@@ -48,17 +51,70 @@
             <div id="sky"></div>
         </div>
         <div id="settings" class=""></div>
+
+        <div id="settings_screen" class="hide">
+            <div id="setting_effekt_sound">
+
+                <!--                <h1>Effekter</h1>-->
+                <div id="sfx">
+                    <div id="sfx_on"></div>
+
+                </div>
+
+                <div id="sfx">
+                    <div id="sfx_off" class="hide"></div>
+
+                </div>
+
+            </div>
+            <div id="setting_music">
+                <div id="setting_music_sound">
+
+                    <!--                <h1>Effekter</h1>-->
+                    <div id="music">
+                        <div id="music_on"></div>
+
+                    </div>
+
+                    <div id="music1">
+                        <div id="music_off" class="hide"></div>
+
+                    </div>
+
+                </div>
+                <div id="setting_close">
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
         <div id="gameover" class="hide">
             <div id="reset"></div>
         </div>
         <div id="levelcomplete" class="hide">
-            <div id="reset"></div>
+            <div id="reset1"></div>
         </div>
+        <div id="hvid"></div>
+
     </div>
-    <div id="hvid"></div>
+
+    <audio id="musik">
+        <source src="happyEnding.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="jaLyd">
+        <source src="jaLyd.mp3" type="audio/mpeg">
+    </audio>
 
 
-
+    <audio id="buzzLyd">
+        <source src="buzzLyd.mp3" type="audio/mpeg">
+    </audio>
 
     <script src="script.js"></script>
 
