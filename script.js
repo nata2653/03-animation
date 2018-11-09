@@ -35,9 +35,6 @@ function showStart() {
 
     document.querySelector("#time").classList.add("timeTell");
 
-    document.querySelector("#musik").play();
-
-
 }
 
 function timeTelling() {
@@ -75,6 +72,9 @@ function hideStart() {
     document.querySelector("#start").addEventListener("animationend", startGame);
 
     document.querySelector("#game_elements").classList.remove("hide");
+
+    document.querySelector("#musik").play();
+
 }
 
 function startGame() {
